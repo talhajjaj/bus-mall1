@@ -19,15 +19,24 @@
   #liftImg{
       width: 250px;
       height: 250px;
+
+      border:5px solid pink;
+
 }
 
   #middleImg{
     width: 250px;
     height: 250px;
+
+    border:5px solid rgb(138, 44, 138);
+
   }
   #rightImg{
     width: 250px;
     height: 250px;
+
+    border:5px solid plum;
+
   }
   span{
       display: block;
@@ -37,4 +46,14 @@
       font-weight: bold;
       background-color:lightblue;
 
+
   }
+  li{
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 20px;
+  }
+ 
+
+  }
+
