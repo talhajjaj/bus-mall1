@@ -40,19 +40,26 @@
   }
   span{
       display: block;
-      padding-top: 30px;
+    
+      padding-top: 50px;
       margin-left: 50px;
       text-align: center;
       font-weight: bold;
       background-color:rgb(255, 255, 0);
 
 
+
   }
   li{
       text-align: center;
-      margin-top: 20px;
+      margin-top: 50px;
       margin-left: 20px;
   }
  
 
+
   
+
+
+
+
