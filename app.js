@@ -1,8 +1,16 @@
 'use strict'
+
+
+alert('welcome to our site');
+
+
+let attempts= 0;
+
 alert('welcome to our site');
 
 
 let attempts =0;
+
 let maxattempts =25;
 let attemptsEl=document.getElementById('attempts');
 
@@ -20,11 +28,17 @@ function ProudectImg(proudectName){
     proudects.push(this);
 
     proudectImgsName.push(this.proudectName);
+    
+
+
+    proudectImgsName.push(this.proudectName);
+
 
 }
 
 let proudectImgs=['bag.jpg','banana.jpg','bathroom.jpg', 'boots.jpg' ,
 'breakfast.jpg' ,'bubblegum.jpg', 'chair.jpg','cthulhu.jpg','dog-duck.jpg',
+
 
 'dragon.jpg','pen.jpg','pet-sweep.jpg', 'scissors.jpg', 'shark.jpg'
 ,'sweep.png','tauntaun.jpg','unicorn.jpg','water-can.jpg','wine-glass.jpg']
@@ -33,11 +47,16 @@ let proudectImgs=['bag.jpg','banana.jpg','bathroom.jpg', 'boots.jpg' ,
 //     let image = Math.floor(Math.random() * (proudectImgs.length));
 //     document.canvas.src="images/"+proudectImgs[image];
 // }
+
+
+
+
 for(let index=0; index< proudectImgs.length; index++)
 { new ProudectImg(proudectImgs[index]);
 // console.log(proudectImgs[index])
 }
 // console.log(proudects)
+
 
 'dragon.jpg','pen.jpg','pet-sweep.png', 'scissors.jpg', 'shark.jpg'
 ,'sweep.jpg','tauntaun.jpg','unicorn.jpg','water-can.jpg','wine-glass.jpg']
@@ -48,14 +67,17 @@ console.log(proudectImgs[index])
 }
 console.log(proudects)
 
+
 function generateImage(){
 
     return(Math.floor(Math.random() *proudectImgs.length))
 
 }
+// generateImage();
 
 // generateImage();
 generateImage();
+
 
 
 let leImgEl =document.getElementById('liftImg');
@@ -70,17 +92,24 @@ let riImgEli;
 // let midImgEli;
 // let riImgEli;
 
+let doublicateImg=[]
+
 function renderImg(){
     leImgEli=generateImage();
     midImgEli=generateImage();
     riImgEli=generateImage();
 
 
+ while(leImgEli===midImgEli||riImgEli===midImgEli|| leImgEli===riImgEli || doublicateImg.includes(leImgEli)|| doublicateImg.includes(riImgEli)|| doublicateImg.includes(midImgEli)) 
+
+
  while(leImgEli===midImgEli||riImgEli===midImgEli|| leImgEli===riImgEli) 
+
  {
      leImgEli= generateImage();
      midImgEli= generateImage();
      riImgEli=generateImage();
+
 //      let Images = ['bag.jpg','banana.jpg','bathroom.jpg', 'boots.jpg' ,
 //      'breakfast.jpg' ,'bubblegum.jpg', 'chair.jpg','cthulhu.jpg','dog-duck.jpg',
 //      'dragon.jpg','pen.jpg','pet-sweep.jpg', 'scissors.jpg', 'shark.jpg'
@@ -94,6 +123,14 @@ function renderImg(){
 //    ,'sweep.png',3)
    
  }
+
+ doublicateImg=[]
+ doublicateImg.push(leImgEli);
+ doublicateImg.push(riImgEli);
+ doublicateImg.push(midImgEli)
+ 
+
+
 //  renderImg();
 leImgEl.setAttribute('src',proudects[leImgEli].source);
 proudects[leImgEli].views++;
@@ -183,11 +220,13 @@ if (attempts<= maxattempts){
         proudects[midImgEli].clicks++
     } else if (event.target.id==='rightImg'){
 
+
     if (event.target.id==='Left'){
         proudects[leImgEli].clicks++
     } else if (event.target.id==='mid'){
         proudects[midImgEli].clicks++
     } else if (event.target.id==='right'){
+
 
         proudects[riImgEli].clicks++
     }
