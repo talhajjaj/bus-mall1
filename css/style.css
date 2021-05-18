@@ -39,15 +39,22 @@
 
   }
   span{
-      display: block;
-    
-      padding-top: 50px;
-      margin-left: 50px;
-      text-align: center;
+    /* display: none; */
+      /* display: inline block; */
+    /* display: inline;
+    height: 50px; */
+      /* padding-top: 50px;
+      margin-left: 50px; */
+      /* text-align: center;
       font-weight: bold;
-      background-color:rgb(255, 255, 0);
+      background-color:rgb(255, 255, 0); */
 
-
+      display: inline; 
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid blue;  
+      background-color: yellow; 
 
   }
   li{
