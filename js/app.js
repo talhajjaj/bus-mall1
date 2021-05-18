@@ -14,7 +14,7 @@ let proudectclicks=[];
 let proudectviews=[];
 function ProudectImg(proudectName){
     this.proudectName=proudectName.split('.')[0];
-    this.source ='images/'+ proudectName
+    this.source ='images'+ proudectName
     this.clicks=0;
     this.views=0;
     proudects.push(this);
@@ -44,7 +44,7 @@ function generateImage(){
 
 }
 // generateImage();
-
+// let images = document.getElementById('images')
 let leImgEl =document.getElementById('liftImg');
 let leImgEli;
 let midImgEl =document.getElementById('middleImg');
