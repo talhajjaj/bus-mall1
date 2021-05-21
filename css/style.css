@@ -70,3 +70,41 @@
 
 
 
+
+  #myChart{
+    width:1000px !important;
+    height:700px !important;
+  
+  }
+    
+  #result{
+  text-align: center;  
+  word-spacing: 5px;
+  }
+  
+  
+  #busgif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button{
+    margin: 0;
+    position: absolute;
+    top: 150%;
+    margin-left: 700px; 
+    color: black;
+    background-color: orangered;
+    box-shadow: 0 9px #999;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-60%);
+    justify-content: center;
+    height: 50px;
+    align-items: center;}
+    button:hover {opacity: 1}
+    button:active {
+      background-color:orange;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }

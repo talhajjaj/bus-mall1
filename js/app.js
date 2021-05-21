@@ -153,6 +153,7 @@ for (let index=0 ;index <proudects.length;index++){
     riImgEl.removeEventListener('click', handelClicks);
     chartRender();
 }
+
 }
 // settingItems();
 function chartRender(){
