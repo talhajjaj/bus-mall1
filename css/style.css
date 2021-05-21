@@ -16,17 +16,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
-  span{
-      display: block;
-      padding-top: 30px;
-      margin-left: 50px;
-      text-align: center;
-      font-weight: bold;
-      background-color:yellow;
-
-  }
-  
   #liftImg{
       width: 250px;
       height: 250px;
@@ -49,24 +38,40 @@
     border:5px solid plum;
 
   }
-  /* span{
- 
+  span{
+    /* display: none; */
+      /* display: inline block; */
+    /* display: inline;
+    height: 50px; */
+      /* padding-top: 50px;
+      margin-left: 50px; */
+      /* text-align: center;
+      font-weight: bold;
+      background-color:rgb(255, 255, 0); */
 
       display: inline; 
       width: 100px;
       height: 100px;
       padding: 5px;
       border: 1px solid blue;  
-      background-color: yellow;  */
+      background-color: yellow; 
 
-/*  
+  }
   li{
       text-align: center;
       margin-top: 50px;
       margin-left: 20px;
-  } */
+  }
  
-#myChart{
+
+
+  
+
+
+
+
+
+  #myChart{
   width:1000px !important;
   height:700px !important;
 
